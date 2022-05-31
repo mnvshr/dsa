@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <conio.h>
+
 int arr_a[3][2];
 int arr_b[3][2];
 int sum[3][2];
@@ -76,5 +78,6 @@ int main()
     sum_arr();
     print_sum();
 
+    getch();
     return 0;
 }
