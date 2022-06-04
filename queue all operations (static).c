@@ -116,7 +116,7 @@ void delete()
     else
     {
         printf("Deleted item is %d \n", queue[front]);
-        for (int i = front + 1; i < rear - 1; i++)
+        for (int i = front; i < rear - 1; i++)
         {
             queue[i] = queue[i + 1];
         }
