@@ -1,3 +1,42 @@
+/* Time complexity
+Best case: O(n*log(n))
+Average case: O(n*log(n))
+Worst case: O(n^2)
+*/
+
+/* Space complexity
+Best case: O(n*log(n))
+*/
+
+// Algorithm
+
+/* 
+quicksort(array, low, high)
+{
+    if(low < high)
+    {
+        p = partition(array, low, high)
+        quicksort(array, low, p - 1)
+        quicksort(array, p + 1, high)
+    }
+}
+
+partition(array, low, high)
+{
+    pivot = array[high]
+    i = low - 1
+    for(j = low; j <= high - 1; j++)
+    if (array[j] < pivot) {
+        i++;
+        swap array[i] and array[j]
+    }
+    swap array[i + 1] and array[high]
+    return(i + 1)
+}
+*/
+
+// Code (using Java)
+
 import java.util.Arrays;
 import java.util.Random;
 
